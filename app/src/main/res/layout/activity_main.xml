@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/dailykit"
+            android:layout_margin="30dp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_name"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:elevation="8dp"
+                android:hint="@string/username"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_password"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:elevation="8dp"
+                android:textSize="24sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_circle_grey"
+            android:layout_margin="30dp"
+            android:padding="5dp"
+            android:text="@string/login_button"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

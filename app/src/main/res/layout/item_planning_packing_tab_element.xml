@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/planning_packing_tab_layout"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="40dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/round_white_button">
+    <TextView
+        android:id="@+id/planning_packing_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/dummy_packing_value"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/planning_packing_tab_process_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/dummy_processing"
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.groctaurant.groctaurant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="adnroid.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".Application.GroctaurantApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activity.PlanningPackingActivity"></activity>
+        <activity android:name=".Activity.SerialActivity" />
+        <activity
+            android:name=".LegacyCode.OldOrderActivity"
+            android:label="@string/title_activity_order"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".LegacyCode.OldOrderDetailActivity" />
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activity.OrderActivity" />
+        <activity android:name=".Activity.IngredientActivity" />
+        <activity android:name=".Activity.InventoryActivity" />
+        <activity android:name=".Activity.PlanningActivity" />
+    </application>
+
+</manifest>

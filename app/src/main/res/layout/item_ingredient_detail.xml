@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="8"
+       android:orientation="horizontal">
+
+       <LinearLayout
+           android:id="@+id/ll_ingredient_detail"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="7"
+           android:orientation="horizontal"
+           android:weightSum="7">
+
+           <TextView
+               android:id="@+id/ingredient_slip_name"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.5"
+               android:gravity="center"
+               android:text="Ingredient Name"
+               android:textColor="#616161"
+               android:textSize="14sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/ingredient_name"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.5"
+               android:gravity="center"
+               android:text="Ingredient Name"
+               android:textColor="#616161"
+               android:textSize="14sp" />
+
+           <TextView
+               android:id="@+id/ingredient_weight"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="100 gm"
+               android:textColor="#616161"
+               android:textSize="14sp" />
+
+           <TextView
+               android:id="@+id/ingredient_volume"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="1 cup"
+               android:textColor="#616161"
+               android:textSize="14sp" />
+
+           <TextView
+               android:id="@+id/ingredient_processing"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="Processing"
+               android:textColor="#616161"
+               android:textSize="14sp" />
+
+           <TextView
+               android:id="@+id/ingredient_section"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="Processing"
+               android:textColor="#616161"
+               android:textSize="14sp" />
+       </LinearLayout>
+
+       <ImageView
+           android:id="@+id/ingredient_more_info"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="2dp"
+           android:layout_marginTop="2dp"
+           android:layout_weight="1"
+           android:src="@drawable/ic_more_info" />
+
+
+   </LinearLayout>
+
+
+</LinearLayout>

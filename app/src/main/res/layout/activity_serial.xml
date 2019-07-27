@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    tools:context=".Activity.SerialActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:text="Scale test demo app" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+            android:text="weight (kg)" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/date"
+            android:textColor="#ff0000"
+            android:textSize="30pt"
+            android:text="0.000" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="300dp"
+                android:id="@+id/clear_0"
+                android:background="@drawable/ad_btn_blue"
+                android:textSize="8pt"
+                android:text="clear zero" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/biaoding_0"
+                android:background="@drawable/ad_btn_blue"
+                android:textSize="8pt"
+                android:text="zero calibration" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/biaoding_15"
+                android:background="@drawable/ad_btn_blue"
+                android:textSize="8pt"
+                android:text="15kg calibration" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/debug"
+                android:background="@drawable/ad_btn_blue"
+                android:textSize="8pt"
+                android:text="Debug" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/back"
+                android:background="@drawable/ad_btn_blue"
+                android:textSize="8pt"
+                android:text="Back" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+    </LinearLayout>
+
+</LinearLayout>

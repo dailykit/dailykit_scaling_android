@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.groctaurant.groctaurant.LegacyCode.OldOrderDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/timer_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="84sp"
+                android:visibility="gone"
+                android:background="#66000000"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dashboard"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/ingredient_detail"
+                                android:textColor="#ff5722"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/order_detail_time"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="bottom"
+                            android:text="Time"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:textColor="#ff5722"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/order_detail_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="Order Id"
+                                android:textColor="#ff5722"
+
+                                android:textSize="20sp"
+                                android:layout_margin="10dp"
+                                android:textAlignment="center"
+                                android:gravity="right"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/order_detail_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="Butter Chicken"
+                                android:textColor="#ff5722"
+                                android:layout_margin="10dp"
+                                android:textAlignment="center"
+
+                                android:gravity="left"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/oder_spices_quantity_ratio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/order_detail_name"
+                                android:text=""
+                                android:textColor="#ff5722"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="15dp"
+                                android:textSize="50dp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:weightSum="8"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Ingredient Slip Name"
+                            android:textColor="#616161"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Ingredient Name"
+                            android:textColor="#616161"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Weight"
+                            android:textColor="#616161"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Volume"
+                            android:textColor="#616161"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Section"
+                            android:textColor="#616161"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Process"
+                            android:textColor="#616161"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:text=""
+                            android:textColor="#616161"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="6"
+                        >
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/ingredient_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/LL_right_list"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#212121"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:text="@string/view_menu"
+                                android:textColor="#ffffff"
+                                android:textSize="40dp"
+                                android:textStyle="bold"
+                                android:padding="10dp"/>
+
+                            <ImageView
+                                android:id="@+id/ham_image"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_ham_button" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/ingredient_measurement_cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:cardBackgroundColor="@color/blue"
+                        android:layout_weight="2"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:paddingLeft="20dp" />
+
+
+                                <TextView
+                                    android:id="@+id/user_name_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:text="John"
+                                    android:textStyle="bold"
+                                    android:textColor="#ffffff"
+                                    android:textSize="28sp" />
+
+                                <TextView
+                                    android:id="@+id/time_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:textStyle="bold"
+                                    android:textSize="28sp"
+                                    android:textColor="#ffffff"
+                                    android:text="12:44 PM"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/weight" />
+
+                                <TextView
+                                    android:id="@+id/order_weight_display"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="right"
+                                    android:textSize="70dp"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:text="0.00" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="bottom"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="@string/weight_measure"
+                                    android:textColor="#ffffff"
+                                    android:textAlignment="gravity"
+                                    android:textSize="36sp"
+
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/weight_message"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/pending_orders_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:paddingBottom="5dp"
+                                    android:paddingLeft="10dp"
+                                    android:text="Pending Orders"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/pending_orders_value_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingBottom="5dp"
+                                    android:text="12"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/pending_items_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:paddingBottom="5dp"
+                                    android:paddingLeft="10dp"
+                                    android:text="Pending Items"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/pending_items_value_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingBottom="5dp"
+                                    android:text="12"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/finished_orders_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:paddingBottom="5dp"
+                                    android:paddingLeft="10dp"
+                                    android:text="Finished Orders"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/finished_orders_value_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingBottom="5dp"
+                                    android:text="12"
+                                    android:textColor="@android:color/holo_green_dark"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:background="#000000">
+
+                                <ImageView
+                                    android:id="@+id/up_button"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/up_arrow" />
+
+                                <ImageView
+                                    android:id="@+id/down_button"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_below="@+id/up_button"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/down_arrow" />
+
+                                <ImageView
+                                    android:id="@+id/right_button"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_below="@+id/up_button"
+                                    android:layout_toRightOf="@+id/down_button"
+                                    android:src="@drawable/right_arrow" />
+
+                                <ImageView
+                                    android:id="@+id/left_button"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_below="@+id/up_button"
+                                    android:layout_toLeftOf="@+id/down_button"
+                                    android:src="@drawable/left_arrow" />
+
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="#000000"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/select_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:background="#ffffff"
+                                    android:padding="5dp"
+                                    android:text="Select"
+                                    android:textSize="30dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

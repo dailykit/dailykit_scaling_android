@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4caf50"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/order_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="3/A - Shrimp Tacos(0/9)"
+            android:padding="15dp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

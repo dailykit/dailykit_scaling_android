@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#282828</color>
+    <color name="colorPrimaryDark">#3C3C3C</color>
+    <color name="colorAccent">#c10303</color>
+    <color name="blue">#1976d2</color>
+    <color name="black">#212121</color>
+    <color name="lightBlue">#64b5f6</color>
+    <color name="cardview_red">#e1503a</color>
+    <color name="cardview_yellow">#ffea00</color>
+    <color name="cardview_green">#00ff5e</color>
+    <color name="grey">#AAAAAA</color>
+    <color name="white">#ffffff</color>
+    <color name="extreme_black">#000000</color>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "988762100653",
+    "firebase_url": "https://mandi-3a503.firebaseio.com",
+    "project_id": "mandi-3a503",
+    "storage_bucket": "mandi-3a503.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988762100653:android:a833c45b5b3ec495",
+        "android_client_info": {
+          "package_name": "com.groctaurant.groctaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988762100653-upj9qo5l4lu6ldsd1i4m9co60hopep5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNuNGD5dkukMzO_--XFYv9oDsL7elOsdE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
